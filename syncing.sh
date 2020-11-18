@@ -1,6 +1,6 @@
 #!/bin/bash
  
-echo -n "输入提交介绍，默认为‘Just auto-commit for synchronizing workspace’ ->"
+echo  "key in commiting message，default's ‘Just auto-commit for synchronizing workspace’"
 
 read -t 5 -n 50
 if [ $? = 0 ] ; then
