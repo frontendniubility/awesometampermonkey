@@ -7,7 +7,7 @@ else
     echo "\n抱歉，你输入超时了。"
 fi 
  
-pause
+sleep 20
  
 echo  "key in commiting message，default's ‘Just auto-commit for synchronizing workspace’"
 
