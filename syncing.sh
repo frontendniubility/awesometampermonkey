@@ -1,19 +1,13 @@
 #!/bin/bash
- 
- 
 
-read -p 'commiting message >' -t 5 -n 50
-if [ $ = 0 ] ; then
-	$="auto-commit for synchronizing"
-else
-echo "$"
-fi
+read  -p 'Commit message>' msg
+ if [ -z "$msg" ]; then     
+	 msg="Synchronizing"
+ fi
  
+echo "Committing as '$msg'"
 git pull
 git add *
 git add -A
-git commit -m "$?"
+git commit -m "$msg"
 git push -u origin master
- 
- 
- read 
