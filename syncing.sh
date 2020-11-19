@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo ${PWD}
-echo "$(dirname "$0")"
-
 cd "$(dirname "$0")"
 if [ -n "$1" ]; then
     msg="Synchronizing"
